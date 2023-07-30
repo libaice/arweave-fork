@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.resources {
+    @apply my-auto mt-5 flex flex-wrap items-center justify-center rounded-md bg-gray-300 p-5;
+  }
+  
+  a.resource {
+    @apply flex-auto px-2 text-center align-middle  font-mono transition duration-300 ease-in-out;
+  }
+  
+  a.resource > img {
+    @apply inline-block h-auto w-auto align-middle;
+  }
+  
+  a.text-link {
+    @apply font-sans text-2xl font-bold;
+  }
+  a.text-link:hover {
+    @apply border-b-2 border-gray-400;
+  }
+  
