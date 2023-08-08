@@ -4,6 +4,8 @@ import "focus-visible";
 import { useEffect, useRef } from "react";
 import { Header } from "@/components/Header";
 import { Container } from "@/components/Container";
+import CookieBanner from "@/components/CookieBanner";
+import { NavBar } from "@/components/NavBar";
 
 function usePrevious(value) {
   let ref = useRef();
@@ -34,7 +36,9 @@ export default function App({ Component, pageProps, router }) {
             <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
           </div>
           <Container className="relative">
-            
+            <CookieBanner/>
+            <Component previousPathName={previousPathName} {...pageProps} />
+            <NavBar currentPathname={router.pathname} />
           </Container>
         </div>
       </main>
