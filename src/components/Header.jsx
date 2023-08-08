@@ -22,8 +22,8 @@ export function Header() {
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
             <p>Los Angeles, CA</p>
           </div>
-        </div> */}
-        {/* <div className="hidden uppercase sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
+        </div>  */}
+         {/* <div className="hidden uppercase sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <Button href="#">Claim AR tokens</Button>
         </div> */}
       </Container>
